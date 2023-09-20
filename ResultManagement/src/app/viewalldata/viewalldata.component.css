@@ -1,0 +1,18 @@
+.logout-button {
+    position:absolute;
+    right: 0.2rem;
+    margin-top: 0;
+  }
+
+  .add-button {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 10px;
+  }
+  .fixed-header {
+    text-align: center;
+  }
+
+  .all-students {
+    color: rgb(47, 47, 76);
+  }

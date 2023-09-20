@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Result Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+</head>
+
+<body>
+
+  <div class="fixed-header mt-3">
+    <button type="button" class="btn btn-info d-block mr-0 ml-auto  back-button">
+      <a href="/studentlogin">BACK</a>
+    </button>
+    <h2 class="center-heading">RESULT</h2>
+  </div>
+
+  <div class="container">
+    <form [formGroup]="viewResult" class="border border-warning mt-4 shadow-lg p-4 mb-4 bg-white">
+      <div class="row mb-3 mt-3">
+        <label for="roll_no" class="col-sm-4 col-form-label">RollNo.</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="roll_no" name="roll_no" formControlName="roll_no" readonly>
+        </div>
+      </div>
+
+      <div class="row mb-3 mt-3">
+        <label for="name" class="col-sm-4 col-form-label">NAME</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="name" name="name" formControlName="name" readonly>
+        </div>
+      </div>
+
+      <div class="row mb-3 mt-3">
+        <label for="date_of_birth" class="col-sm-4 col-form-label">DOB</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="date_of_birth" name="date_of_birth" formControlName="date_of_birth" readonly>
+        </div>
+      </div>
+
+      <div class="row mb-3 mt-3">
+        <label for="score" class="col-sm-4 col-form-label">SCORE</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="score" name="score" formControlName="score" readonly>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+

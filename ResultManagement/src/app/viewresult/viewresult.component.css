@@ -1,0 +1,13 @@
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.back-button {
+    margin-top: 50px;
+    margin-right: 10px;
+  }
+  .center-heading {
+    text-align: center;
+}

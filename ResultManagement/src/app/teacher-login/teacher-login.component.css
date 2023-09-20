@@ -1,0 +1,80 @@
+/* Center the form vertically and horizontally */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the fixed header */
+  .fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Style the "BACK" button */
+  .fixed-header .btn {
+    float: right;
+    margin-left: auto;
+  }
+  
+  /* Style the form container */
+  .border {
+    border-width: 2px;
+    border-color: #ffc107;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the form labels */
+  .col-form-label {
+    font-weight: bold;
+  }
+  
+  /* Style the input fields */
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  /* Style the error messages */
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  /* Style the sign-in button */
+  .btn-success {
+    margin-top: 10px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 576px) {
+    /* Adjust the width of the form container for small screens */
+    .border {
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust the padding of the form container for medium screens */
+    .border {
+      padding: 15px;
+    }
+  }
+  

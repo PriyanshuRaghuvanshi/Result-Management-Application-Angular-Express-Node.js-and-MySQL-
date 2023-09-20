@@ -1,0 +1,15 @@
+
+        .center-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .button-padding {
+            padding-right: 10px;
+        }
+        .center-heading {
+            text-align: center;
+        }
+        .back-button {
+            margin-left: 80px;
+            margin-top: 50px;
+        }

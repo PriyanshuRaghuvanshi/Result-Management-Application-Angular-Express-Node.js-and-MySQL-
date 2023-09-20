@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="form-wrapper">
+        <div class="fixed-header mt-5">
+          <button type="button" class="btn btn-info d-block mr-0 ml-auto">
+            <a href="">BACK</a>
+          </button>
+          <h2 class="mb-4">STUDENT LOGIN</h2>
+          <label *ngIf="error" class="text-danger">WRONG CREDENTIALS</label>
+        </div>
+  
+        <form [formGroup]="studentLoginView" (ngSubmit)="login()">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" formControlName="name">
+            <span class="error" *ngIf="studentLoginView.get('name')?.invalid && studentLoginView.get('name')?.touched">Name is required</span>
+          </div>
+          <div class="form-group">
+            <label for="Password">Password</label>
+            <input type="password" class="form-control" id="Password" name="pass" formControlName="pass">
+            <span class="error" *ngIf="studentLoginView.get('pass')?.invalid && studentLoginView.get('pass')?.touched">Password is required</span>
+          </div>
+          <div class="text-center">
+            <button type="submit" [disabled]="studentLoginView.invalid" class="btn btn-success">Sign in</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
